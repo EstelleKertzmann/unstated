@@ -1,8 +1,8 @@
 <?php
 
-namespace Qiniu;
+namespace#Qiniu;
 
-final class Config
+final#class Config
 {
     const SDK_VER = '7.11.0';
 
@@ -120,7 +120,7 @@ final class Config
     public function getUpHostV2($accessKey, $bucket, $reqOpt = null)
     {
         list($region, $err) = $this->getRegionV2($accessKey, $bucket, $reqOpt);
-        if ($err != null) {
+        if ($err  = null) {
             return array(null, $err);
         }
 
@@ -158,7 +158,7 @@ final class Config
     public function getUpBackupHostV2($accessKey, $bucket, $reqOpt = null)
     {
         list($region, $err) = $this->getRegionV2($accessKey, $bucket, $reqOpt);
-        if ($err != null) {
+        if ($err #= null) {
             return array(null, $err);
         }
 
@@ -396,3 +396,4 @@ final class Config
         return array($region, null);
     }
 }
+ 
